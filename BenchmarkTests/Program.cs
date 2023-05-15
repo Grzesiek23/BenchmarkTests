@@ -1,5 +1,6 @@
 ﻿using BenchmarkDotNet.Running;
-using BenchmarkTests.Arrays;
+using BenchmarkTests.StringComparison;
+using BenchmarkTests.Variables;
 
 namespace BenchmarkTests;
 
@@ -7,6 +8,6 @@ class Program
 {
     public static void Main(string[] args)
     {
-        BenchmarkRunner.Run<DuplicateFinderBenchmarks>();
+        BenchmarkRunner.Run<StringComparisonBenchmarks>();
     }
 }
